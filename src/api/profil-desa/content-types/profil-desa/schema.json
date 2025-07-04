@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profil_desas",
+  "info": {
+    "singularName": "profil-desa",
+    "pluralName": "profil-desas",
+    "displayName": "Profil Desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_desa": {
+      "type": "string"
+    },
+    "luas_wilayah": {
+      "type": "string"
+    },
+    "jumlah_penduduk": {
+      "type": "string"
+    },
+    "jumlah_dusun": {
+      "type": "string"
+    },
+    "sejarah": {
+      "type": "blocks"
+    },
+    "visi_misi": {
+      "type": "blocks"
+    },
+    "potensi_desa": {
+      "type": "blocks"
+    },
+    "foto_struktur_pemerintahan": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "galeri": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

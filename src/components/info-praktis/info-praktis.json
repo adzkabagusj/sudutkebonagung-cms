@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_info_praktis_info_praktis",
+  "info": {
+    "displayName": "info_praktis",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "jam_buka": {
+      "type": "string"
+    },
+    "harga_tiket": {
+      "type": "string"
+    },
+    "tips": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

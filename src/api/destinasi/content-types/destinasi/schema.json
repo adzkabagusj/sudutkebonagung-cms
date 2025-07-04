@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinasis",
+  "info": {
+    "singularName": "destinasi",
+    "pluralName": "destinasis",
+    "displayName": "Destinasi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama"
+    },
+    "desa": {
+      "type": "enumeration",
+      "enum": [
+        "Plumbungan",
+        "Karangnongko"
+      ]
+    },
+    "deskripsi": {
+      "type": "blocks"
+    },
+    "galeri": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lokasi": {
+      "type": "json"
+    },
+    "info_praktis": {
+      "type": "component",
+      "component": "info-praktis.info-praktis",
+      "repeatable": false
+    }
+  }
+}

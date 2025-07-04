@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikels",
+  "info": {
+    "singularName": "artikel",
+    "pluralName": "artikels",
+    "displayName": "Artikel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "judul"
+    },
+    "penulis": {
+      "type": "string"
+    },
+    "gambar_utama": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cuplikan": {
+      "type": "text"
+    },
+    "isi_artikel": {
+      "type": "blocks"
+    }
+  }
+}
