@@ -402,6 +402,7 @@ export interface ApiArtikelArtikel extends Struct.CollectionTypeSchema {
     penulis: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'judul'>;
+    tag: Schema.Attribute.Enumeration<['Kegiatan Desa', 'Budaya']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -422,7 +423,6 @@ export interface ApiDestinasiDestinasi extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    desa: Schema.Attribute.Enumeration<['Plumbungan', 'Karangnongko']>;
     deskripsi: Schema.Attribute.Blocks;
     galeri: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
@@ -462,6 +462,7 @@ export interface ApiProfilDesaProfilDesa extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    deskripsi_desa: Schema.Attribute.Blocks;
     foto_struktur_pemerintahan: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
@@ -481,7 +482,6 @@ export interface ApiProfilDesaProfilDesa extends Struct.CollectionTypeSchema {
     nama_desa: Schema.Attribute.String;
     potensi_desa: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
-    sejarah: Schema.Attribute.Blocks;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

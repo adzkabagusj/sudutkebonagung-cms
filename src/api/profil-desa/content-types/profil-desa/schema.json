@@ -23,7 +23,7 @@
     "jumlah_dusun": {
       "type": "string"
     },
-    "sejarah": {
+    "deskripsi_desa": {
       "type": "blocks"
     },
     "visi_misi": {

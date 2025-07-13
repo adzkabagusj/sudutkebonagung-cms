@@ -36,6 +36,13 @@
     },
     "isi_artikel": {
       "type": "blocks"
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "Kegiatan Desa",
+        "Budaya"
+      ]
     }
   }
 }
