@@ -402,7 +402,7 @@ export interface ApiArtikelArtikel extends Struct.CollectionTypeSchema {
     penulis: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'judul'>;
-    tag: Schema.Attribute.Enumeration<['Kegiatan Desa', 'Budaya']>;
+    tag: Schema.Attribute.Enumeration<['Kegiatan Desa', 'Budaya', 'Wisata']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

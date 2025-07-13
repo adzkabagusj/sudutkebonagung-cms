@@ -41,7 +41,8 @@
       "type": "enumeration",
       "enum": [
         "Kegiatan Desa",
-        "Budaya"
+        "Budaya",
+        "Wisata"
       ]
     }
   }
