@@ -438,7 +438,7 @@ export interface ApiDestinasiDestinasi extends Struct.CollectionTypeSchema {
       'api::destinasi.destinasi'
     > &
       Schema.Attribute.Private;
-    lokasi: Schema.Attribute.JSON;
+    lokasi_map_url: Schema.Attribute.Text;
     nama: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'nama'>;

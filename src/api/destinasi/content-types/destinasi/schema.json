@@ -31,8 +31,8 @@
         "audios"
       ]
     },
-    "lokasi": {
-      "type": "json"
+    "lokasi_map_url": {
+      "type": "text"
     },
     "info_praktis": {
       "type": "component",
