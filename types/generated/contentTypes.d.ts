@@ -482,10 +482,10 @@ export interface ApiProfilDesaProfilDesa extends Struct.CollectionTypeSchema {
     nama_desa: Schema.Attribute.String;
     potensi_desa: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
+    sejarah_desa: Schema.Attribute.Blocks;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    visi_misi: Schema.Attribute.Blocks;
   };
 }
 
