@@ -29,9 +29,6 @@
     "sejarah_desa": {
       "type": "blocks"
     },
-    "potensi_desa": {
-      "type": "blocks"
-    },
     "foto_struktur_pemerintahan": {
       "type": "media",
       "multiple": false,
