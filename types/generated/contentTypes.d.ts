@@ -387,7 +387,6 @@ export interface ApiArtikelArtikel extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    cuplikan: Schema.Attribute.Text;
     gambar_utama: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

@@ -31,9 +31,6 @@
         "audios"
       ]
     },
-    "cuplikan": {
-      "type": "text"
-    },
     "isi_artikel": {
       "type": "blocks"
     },
