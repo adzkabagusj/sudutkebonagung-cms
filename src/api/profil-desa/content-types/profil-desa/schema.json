@@ -48,6 +48,11 @@
         "videos",
         "audios"
       ]
+    },
+    "daftar_perangkat": {
+      "type": "component",
+      "component": "perangkat-desa.perangkat-desa",
+      "repeatable": true
     }
   }
 }

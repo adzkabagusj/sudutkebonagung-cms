@@ -461,6 +461,10 @@ export interface ApiProfilDesaProfilDesa extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    daftar_perangkat: Schema.Attribute.Component<
+      'perangkat-desa.perangkat-desa',
+      true
+    >;
     deskripsi_desa: Schema.Attribute.Blocks;
     foto_struktur_pemerintahan: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'

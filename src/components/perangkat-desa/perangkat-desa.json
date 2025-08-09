@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_perangkat_desa_perangkat_desas",
+  "info": {
+    "displayName": "Perangkat Desa",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "jabatan": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

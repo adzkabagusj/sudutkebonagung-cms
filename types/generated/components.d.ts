@@ -13,10 +13,24 @@ export interface InfoPraktisInfoPraktis extends Struct.ComponentSchema {
   };
 }
 
+export interface PerangkatDesaPerangkatDesa extends Struct.ComponentSchema {
+  collectionName: 'components_perangkat_desa_perangkat_desas';
+  info: {
+    displayName: 'Perangkat Desa';
+    icon: 'user';
+  };
+  attributes: {
+    foto: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    jabatan: Schema.Attribute.String;
+    nama: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'info-praktis.info-praktis': InfoPraktisInfoPraktis;
+      'perangkat-desa.perangkat-desa': PerangkatDesaPerangkatDesa;
     }
   }
 }
